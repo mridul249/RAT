@@ -1,7 +1,4 @@
-# powershell log scheduler
-# created by : C0SM0
-
-# times logs will be sent [keep in military time]
+# times logs will be sent
 $logTimes = @(
     '00:00:00',
     '01:00:00',
